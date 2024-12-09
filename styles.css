@@ -1,0 +1,131 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Dashboard Section */
+.dashboard {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.key-metrics h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.metrics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.metric {
+  flex: 1 1 200px;
+  padding: 10px;
+  background: white;
+  color: #007BFF;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+h1 {
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Dropdown Styling */
+.action-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dots {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+}
+
+/* Show Dropdown */
+.action-dropdown.active .dropdown-menu {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table th, table td {
+      font-size: 14px;
+  }
+  .metric {
+      flex: 1 1 100%;
+  }
+}

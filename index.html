@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Key Metrics Section -->
+        <div class="dashboard">
+            <div class="key-metrics">
+                <h2>Key Metrics</h2>
+                <div class="metrics-container">
+                    <div class="metric">Total Users Registered: 120</div>
+                    <div class="metric">Pending Service Requests: 15</div>
+                    <div class="metric">Completed Service Requests: 320</div>
+                    <div class="metric">Past Orders Processed: 320</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <h1>Total Users Registered</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- First Row -->
+                <tr>
+                    <td>ID0001</td>
+                    <td>John Doe</td>
+                    <td>johndoe@email.com</td>
+                    <td>01/12/2024</td>
+                    <td>New</td>
+                    <td>
+                        <div class="action-dropdown">
+                            <button class="dots" aria-label="Open menu">⋮</button>
+                            <ul class="dropdown-menu">
+                                <li><button onclick="openChat('ID0001')">Chat</button></li>
+                                <li><button onclick="viewDetails('ID0001')">View</button></li>
+                                <li><button onclick="editRecord('ID0001')">Edit</button></li>
+                                <li><button onclick="confirmDelete('ID0001')">Delete</button></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Second Row -->
+                <tr>
+                    <td>ID0002</td>
+                    <td>Jane Smith</td>
+                    <td>janesmith@email.com</td>
+                    <td>02/12/2024</td>
+                    <td>Pending</td>
+                    <td>
+                        <div class="action-dropdown">
+                            <button class="dots" aria-label="Open menu">⋮</button>
+                            <ul class="dropdown-menu">
+                                <li><button onclick="openChat('ID0002')">Chat</button></li>
+                                <li><button onclick="viewDetails('ID0002')">View</button></li>
+                                <li><button onclick="editRecord('ID0002')">Edit</button></li>
+                                <li><button onclick="confirmDelete('ID0002')">Delete</button></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
